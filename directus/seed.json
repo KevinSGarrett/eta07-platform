@@ -1,0 +1,130 @@
+{
+  "collections": [
+    {
+      "collection": "leads",
+      "meta": {
+        "icon": "people",
+        "note": "Canonical leads"
+      }
+    },
+    {
+      "collection": "lead_services",
+      "meta": {
+        "icon": "link"
+      }
+    },
+    {
+      "collection": "lab_lead_details",
+      "meta": {
+        "icon": "flask"
+      }
+    },
+    {
+      "collection": "hvac_lead_details",
+      "meta": {
+        "icon": "factory"
+      }
+    },
+    {
+      "collection": "collections_lead_details",
+      "meta": {
+        "icon": "briefcase"
+      }
+    }
+  ],
+  "roles": [
+    {
+      "name": "super_admin"
+    },
+    {
+      "name": "ceo"
+    },
+    {
+      "name": "cto"
+    },
+    {
+      "name": "sales_manager"
+    },
+    {
+      "name": "collections_manager"
+    },
+    {
+      "name": "compliance_manager"
+    },
+    {
+      "name": "lab_sales_manager"
+    },
+    {
+      "name": "sales_team_lead"
+    },
+    {
+      "name": "sales_team"
+    },
+    {
+      "name": "dev_maint"
+    }
+  ],
+  "dashboards": [
+    {
+      "name": "Overview",
+      "cards": [
+        "total_leads",
+        "contact_rate",
+        "appointments",
+        "conversions",
+        "export_activity"
+      ]
+    },
+    {
+      "name": "HVAC KPIs",
+      "cards": [
+        "conversions_by_zip",
+        "installs",
+        "avg_ticket",
+        "property_age_bands"
+      ]
+    },
+    {
+      "name": "Lab KPIs",
+      "cards": [
+        "conversions_by_specialty",
+        "accepts_insurance",
+        "touches_to_appt"
+      ]
+    },
+    {
+      "name": "Collections KPIs",
+      "cards": [
+        "connects",
+        "ptp",
+        "recovery_rate",
+        "top_accounts"
+      ]
+    }
+  ],
+  "presets": {
+    "sales_team": {
+      "columns": [
+        "company_name",
+        "contact_full_name",
+        "phone_e164",
+        "city",
+        "state",
+        "lead_stage"
+      ]
+    },
+    "sales_manager": {
+      "columns": [
+        "company_name",
+        "contact_full_name",
+        "email",
+        "phone_e164",
+        "city",
+        "state",
+        "lead_stage",
+        "last_outcome",
+        "tags"
+      ]
+    }
+  }
+}
